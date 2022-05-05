@@ -28,8 +28,15 @@ a {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 4rem;
+    font-weight: 300;
+    padding: 0 0 5%;
+}
+
+h2 {
+    font-size: 2rem;
     font-weight: 200;
+    padding: 0 0 2%;
 }
 
 .article {
@@ -38,8 +45,25 @@ h1 {
 
 .standardArticle {
     font-size: 2rem;
-    color: $color200;
+    color: $color300;
     font-weight: 200;
     line-height: 1.8;
-    margin: 10px;
+    margin: 10px 0;
+}
+
+.articleBlock {
+    width: 100%;
+}
+
+article {
+    padding: 40px;
+}
+
+.button {
+    background-color: $color100;
+    color: $color300;
+    border: 1px solid $color400;
+    padding: 10px 30px;
+    margin: 0 5px 0 0;
+    border-radius: 3px;
 }

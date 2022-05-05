@@ -28,8 +28,15 @@ a {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
+  font-weight: 300;
+  padding: 0 0 5%;
+}
+
+h2 {
+  font-size: 2rem;
   font-weight: 200;
+  padding: 0 0 2%;
 }
 
 .article {
@@ -38,10 +45,27 @@ h1 {
 
 .standardArticle {
   font-size: 2rem;
-  color: #867772;
+  color: rgb(115, 115, 115);
   font-weight: 200;
   line-height: 1.8;
-  margin: 10px;
+  margin: 10px 0;
+}
+
+.articleBlock {
+  width: 100%;
+}
+
+article {
+  padding: 40px;
+}
+
+.button {
+  background-color: #2e2e2e;
+  color: rgb(115, 115, 115);
+  border: 1px solid #ebccc2;
+  padding: 10px 30px;
+  margin: 0 5px 0 0;
+  border-radius: 3px;
 }
 
 #social {
@@ -136,7 +160,7 @@ h1 {
 
 #grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 1.25fr 1fr;
   align-items: center;
 }
 
@@ -154,7 +178,7 @@ h1 {
 
 #grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 1.25fr 1fr;
   align-items: center;
 }
 
@@ -172,7 +196,7 @@ h1 {
 
 #grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 1.25fr 1fr;
   align-items: center;
 }
 
@@ -186,6 +210,135 @@ h1 {
 
 .grid-right-shop {
   background-color: #2e2e2e;
+  text-align: center;
+}
+
+.button {
+  background-color: #ebccc2;
+}
+
+.video {
+  display: flex;
+}
+.video video {
+  width: 60%;
+  margin: 20vh auto;
+}
+
+.exist {
+  padding: 0 15% 10%;
+}
+
+#gridInspiration {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 10vh;
+  width: 80vw;
+}
+
+.grid-image-inspiration-top {
+  width: 100%;
+  background: url(../img/ETC_6.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  height: 70vh;
+}
+
+.grid-image-inspiration-bottom {
+  width: 100%;
+  background: url(../img/ETC_5.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top left;
+  height: 70vh;
+}
+
+.grid-article-inspiration-right {
+  width: 80%;
+  background-color: #2e2e2e;
+}
+
+.grid-article-inspiration-left {
+  width: 80%;
+  justify-self: right;
+  background-color: #2e2e2e;
+}
+
+.subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100vh;
+}
+.subscribe form {
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+}
+.subscribe form input:first-of-type {
+  width: 40vw;
+  padding: 10px 30px;
+}
+.subscribe form input:last-of-type {
+  width: 10vw;
+  padding: 10px 30px;
+  margin: 15vw;
+}
+
+@media only screen and (max-width: 576px) {
+  #navigation {
+    display: none;
+  }
+
+  #social {
+    margin: 0 0 10%;
+  }
+  #social ul {
+    gap: 15px;
+  }
+
+  .slogan {
+    padding: 10vh 0 5vh;
+    text-align: center;
+  }
+
+  #greatMan {
+    padding: 0%;
+  }
+
+  .fullImg {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .article {
+    text-align: center;
+  }
+
+  #indexGrid {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  #indexGrid div {
+    width: 100%;
+    margin: 2vh;
+  }
+  #indexGrid div img {
+    width: 100%;
+  }
+
+  #grid {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

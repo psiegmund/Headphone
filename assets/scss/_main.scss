@@ -43,17 +43,13 @@
 
 #grid {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1.25fr 1fr;
     align-items: center;
 }
 
 .grid-left-lounger {
     background: url(../img/section-voyager.jpg);
-    //MIXIN ERSTELLEN
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
+    @include background;
 }
 
 .grid-right-lounger {
@@ -66,17 +62,13 @@
 
 #grid {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1.25fr 1fr;
     align-items: center;
 }
 
 .grid-left-experience {
     background: url(../img/section-experience-1.jpg);
-    //MIXIN ERSTELLEN
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
+    @include background;
 }
 
 .grid-right-experience {
@@ -89,19 +81,106 @@
 
 #grid {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1.25fr 1fr;
     align-items: center;
 }
 
 .grid-left-shop {
     background: url(../img/section-composition4.jpg);
-    //MIXIN ERSTELLEN
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
+    @include background
 }
 
 .grid-right-shop {
     background-color: $color100;
+    text-align: center;
+}
+
+.button {
+    background-color: $color400;
+}
+
+// ==================================
+//               inspiration.html
+//===================================
+
+.video {
+    display: flex;
+
+    video {
+        width: 60%;
+        margin: 20vh auto;
+    }
+}
+
+.exist {
+    padding: 0 15% 10%;
+}
+
+#gridInspiration {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10vh;
+    width: 80vw;
+
+}
+
+.grid-image-inspiration-top {
+    width: 100%;
+    background: url(../img/ETC_6.webp);
+    //MIXIN ERSTELLEN
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    height: 70vh;
+}
+
+.grid-image-inspiration-bottom {
+    width: 100%;
+    background: url(../img/ETC_5.webp);
+    //MIXIN ERSTELLEN
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top left;
+    height: 70vh;
+}
+
+.grid-article-inspiration-right {
+    width: 80%;
+    background-color: $color100;
+}
+
+.grid-article-inspiration-left {
+    width: 80%;
+    justify-self: right;
+    background-color: $color100;
+}
+
+// ==================================
+//               subscribe.html
+//===================================
+
+.subscribe {
+    @include flexit;
+    flex-direction: column;
+    height: 100vh;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        font-size: 3rem;
+
+        input:first-of-type {
+            width: 40vw;
+            padding: 10px 30px;
+        }
+
+        input:last-of-type {
+            width: 10vw;
+            padding: 10px 30px;
+            margin: 15vw;
+        }
+    }
 }

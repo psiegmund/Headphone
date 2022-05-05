@@ -4,3 +4,10 @@
     align-items: center;
     flex-wrap: wrap;
 }
+
+@mixin background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}

@@ -1,0 +1,53 @@
+@media only screen and (max-width: 576px) {
+
+    #navigation {
+        display: none;
+    }
+
+    #social {
+        margin: 0 0 10%;
+
+        ul {
+            gap: 15px;
+        }
+    }
+
+    .slogan {
+        padding: 10vh 0 5vh;
+        text-align: center;
+    }
+
+    #greatMan {
+        padding: 0%;
+    }
+
+    .fullImg {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .article {
+        text-align: center;
+    }
+
+    #indexGrid {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+
+        div {
+            width: 100%;
+            margin: 2vh;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    #grid {
+        display: block;
+    }
+}
