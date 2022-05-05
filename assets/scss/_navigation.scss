@@ -1,0 +1,43 @@
+#navigation {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.navMenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 35px 0px 35px 50px;
+    list-style: none;
+
+    div {
+        position: relative;
+        padding: 10px 10px;
+        border: 1px solid $color400;
+        border-radius: 50%;
+    }
+
+    div::before {
+        position: absolute;
+        content: "⃝";
+        top: 50%;
+        left: calc(50% + 4px);
+        transform: translate(-50%, -50%);
+        background-color: $color400;
+    }
+}
+
+.navMenu:hover div {
+    color: #fff;
+}
+
+.navMenu:hover a {
+    color: #fff;
+}
+
+// .navMenu::before {
+
+// }

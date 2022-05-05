@@ -1,0 +1,107 @@
+// ==================================
+//               index.html
+//===================================
+
+.slogan {
+    padding-left: 25%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-size: 5rem;
+    font-weight: 300;
+}
+
+#greatMan {
+    padding: 3%;
+}
+
+.fullImg {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#indexGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+
+    div {
+        width: 100%;
+        margin: 15vh 0;
+
+        img {
+            width: 70%;
+        }
+    }
+}
+
+// ==================================
+//               lounger.html
+//===================================
+
+#grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+}
+
+.grid-left-lounger {
+    background: url(../img/section-voyager.jpg);
+    //MIXIN ERSTELLEN
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.grid-right-lounger {
+    background-color: $color100;
+}
+
+// ==================================
+//               experience.html
+//===================================
+
+#grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+}
+
+.grid-left-experience {
+    background: url(../img/section-experience-1.jpg);
+    //MIXIN ERSTELLEN
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.grid-right-experience {
+    background-color: $color100;
+}
+
+// ==================================
+//               shop.html
+//===================================
+
+#grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+}
+
+.grid-left-shop {
+    background: url(../img/section-composition4.jpg);
+    //MIXIN ERSTELLEN
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.grid-right-shop {
+    background-color: $color100;
+}
